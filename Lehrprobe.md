@@ -30,6 +30,7 @@ Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Ga
 | --- | --- | -------- | --- | --------- |
 |     |     |          |     |           |
 
+
 ![Addierer](./img/Addierer.png)<!-- width="90%" --> [WikiAdd]
 
 
