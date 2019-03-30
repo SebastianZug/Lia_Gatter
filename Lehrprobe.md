@@ -26,12 +26,17 @@ Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
 
 
 
-## 0 - Organisatorisches
-
-                                    {{0-1}}
-*******************************************************************************
+## 1 - Prüfungsfrage
 
 **Zielstellung der Veranstaltung**
+
+Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Gatterlogik!
+
+| $a$ | $b$ | $c_{in}$ | $s$ | $c_{out}$ |
+| --- | --- | -------- | --- | --------- |
+|     |     |          |     |           |
+
+![Addierer](./img/Addierer.png)<!-- width="90%" -->
 
 
 *******************************************************************************
