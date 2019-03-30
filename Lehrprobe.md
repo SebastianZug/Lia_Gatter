@@ -47,6 +47,9 @@ Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Ga
 
 Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
 
+
+![ScreenShotAtom](./img/ScreenShotAtom.png)
+
 Erläuterungen
 
 ### Fragen an die heutige Veranstaltung
