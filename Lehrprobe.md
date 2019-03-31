@@ -50,7 +50,12 @@ Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Addition von einzelnen Werten  <br> <br> <br> <br>| Flexibles Handling für mehrere Operationen <br> \* Logische Funktionen: `NOT`, `AND`, `OR`, `EXOR` <br> \* Arithmetische Funktionen: `ADD`, `SUB`, `(MUL)`, `(DIV)` <br>  \* Sonstige: `SHIFT LEFT`, `SHIFT RIGHT` |
 
-![ALU](./img/ALU.png) <!-- width="90%" --> 
+![ALU](./img/ALU.png) <!-- width="90%" -->
+
+![ALU](./img/ExtendedALU.png) <!-- width="80%" -->
+
+
+
 
 ## Anhang
 
