@@ -24,12 +24,22 @@ Prof. Dr. Sebastian Zug
 
 ## 1 - Prüfungsfrage(n)
 
-Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Gatterlogik!
+**Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Gatterlogik!**
 
-| $a$ | $b$ | $c_{in}$ | $s$ | $c_{out}$ |
-| --- | --- | -------- | --- | --------- |
-|     |     |          |     |           |
+| $a$ | $b$ | $c_{in}$ | $c_{out}$ | $s$ |
+| --- | --- | -------- | --------- | --- |
+| 0   | 0   | 0        | 0         | 0   |
+| 0   | 0   | 1        | 1         | 0   |
+| 0   | 1   | 0        | 1         | 0   |
+| 0   | 1   | 1        | 0         | 1   |
+| 1   | 0   | 0        | 1         | 0   |
+| 1   | 0   | 1        | 0         | 1   |
+| 1   | 1   | 0        | 0         | 1   |
+| 1   | 1   | 1        | 1         | 1   |
 
+---------------------------------------------------------------------
+
+Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit Fortschreibung des Carrys.
 
 ![Addierer](./img/Addierer.png)<!-- width="90%" --> [WikiAdd]
 
@@ -40,13 +50,11 @@ Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Ga
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Addition von einzelnen Werten  <br> <br> <br> <br>| Flexibles Handling für mehrere Operationen <br> \* Logische Funktionen: `NOT`, `AND`, `OR`, `EXOR` <br> \* Arithmetische Funktionen: `ADD`, `SUB`, `(MUL)`, `(DIV)` <br>  \* Sonstige: `SHIFT LEFT`, `SHIFT RIGHT` |
 
-
-
+![ALU](./img/ALU.png) <!-- width="90%" --> 
 
 ## Anhang
 
 Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
-
 
 ![ScreenShotAtom](./img/ScreenShotAtom.png)
 
@@ -54,20 +62,19 @@ Erläuterungen
 
 ### Fragen an die heutige Veranstaltung
 
-1. Welche Funktion haben die sogenanten Steuerleitungen beim Betrieb der CPU?
+**Welche Funktion haben die sogenannten Steuerleitungen beim Betrieb der CPU?**
 
 [( )] Triggern der Abarbeitung der Befehle
 [(X)] Spezifikation der Zustände bestimmter Komponenten
 [( )] Definition der Adressen des Programmspeichers
 [[?]] Mit den Steuerbits wurden unter anderem die spezifischen ALU Operationen adressiert.
 
-2. Welche Funktion haben die sogenanten Steuerleitungen beim Betrieb der CPU?
+**Der Befehlssatz einer (Modell)-CPU umfasst 27 Befehle. Wie viele Bit muss die korrespondierende OP-Code Repräsentation mindestens umfassen?**
 
-[( )] Triggern der Abarbeitung der Befehle
-[(X)] Spezifikation der Zustände bestimmter Komponenten
-[( )] Definition der Adressen des Programmspeichers
-[[?]] Mit den Steuerbits wurden unter anderem die spezifischen ALU Operationen adressiert.
+[[5]]
+[[?]] Mit welcher Potenz von zwei werden 27 Zustände abgedeckt?
 
+**...**
 
 ### Referenzen und Literaturhinweise
 
