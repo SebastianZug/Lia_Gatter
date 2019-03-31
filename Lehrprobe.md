@@ -41,7 +41,7 @@ Prof. Dr. Sebastian Zug
 
 Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit Fortschreibung des Carrys.
 
-![Addierer](./img/Addierer.png)<!-- width="90%" --> [WikiAdd]
+![Addierer](img/Addierer.png "Addierer")<!-- width="80%" --> [WikiAdd]
 
 
 ## 2 - Auf dem Weg zum Universalrechner … Zwischenstand 1
@@ -50,9 +50,11 @@ Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Addition von einzelnen Werten  <br> <br> <br> <br>| Flexibles Handling für mehrere Operationen <br> \* Logische Funktionen: `NOT`, `AND`, `OR`, `EXOR` <br> \* Arithmetische Funktionen: `ADD`, `SUB`, `(MUL)`, `(DIV)` <br>  \* Sonstige: `SHIFT LEFT`, `SHIFT RIGHT` |
 
-![ALU](./img/ALU.png) <!-- width="90%" -->
 
-![ALU](./img/ExtendedALU.png) <!-- width="80%" -->
+![ALU](img/ALU.png "ALU")<!-- width="80%" -->
+
+
+![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="80%" -->
 
 
 
