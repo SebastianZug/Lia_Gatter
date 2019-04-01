@@ -406,7 +406,27 @@ iframe.contentWindow.location.replace("https://liascript.github.io/logicemu_temp
 
 Prof. Dr. Sebastian Zug
 
-02. April 2019
+ 02. April 2019
+
+```armasm
+section .data
+    hello:     db 'Hello World?',10
+    helloLen:  equ $-hello          
+
+section .text
+	global _start
+
+_start:
+	mov eax,4       
+	mov ebx,1            
+	mov ecx,hello       
+	mov edx,helloLen    
+	int 80h             
+	mov eax,1            
+	mov ebx,0           
+	int 80h;
+```
+@Rextester.eval(@Nasm)
 
 Die interacktive Version des Vortrages findet sich unter [LiaScript](https://liascript.github.io/course/?https://raw.githubusercontent.com/SebastianZug/Lia_Gatter/master/README.md#1)
 
@@ -535,9 +555,9 @@ Konfigurationen der Steuerleitungen?
 
 ********************************************************************************
 
-## 3 - Zielstellung 2 ... Ketten von Operationen
+## 3 - Zielstellung 2 ... Folgen von Operationen
 
-                                      {{0}}
+                                    {{0-1}}
 ********************************************************************************
 
 | Realisierte Features                                  | Wunschliste |
@@ -546,54 +566,92 @@ Konfigurationen der Steuerleitungen?
 
 ********************************************************************************
 
+
+                                    {{1-3}}
+********************************************************************************
+
 * Integration eines Speichers für die Konfigurationssequenzen
 * „Counter“ für die Konfiguration des Fortschritts im Ablauf – Inkrementierung einer Adresse
 
 ![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="60%" -->
 
+********************************************************************************
+
+
+                                    {{2}}
+********************************************************************************
+
+Und wie greifen wir auf die Daten zu?
+
 ![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="60%" -->
 
+********************************************************************************
 
-## 4. - Zielstellung 3 ...
+## 4. - Zielstellung 3 ... Daten und abstrakte Befehle
 
-{{0}}
+                                    {{0-1}}
 ********************************************************************************
 
 | Realisierte Features                                  | Wunschliste |
 | ----------------------------------------------------- | ----------- |
-| 1. Addition von einzelnen Werten  <br> 2. Arithmetische Einheit mit mehren Funktionen  <br> 3. Sequenzen von Berechnungsfolgen <br> <br>  <br>  <br>  <br> <br> |  Und die Daten? Wie können wir hier die <br> notwendige Variabilität sicherstellen <br> <br> Reg\_A <- 3 <br> Reg\_B <- 2 <br> ADD\_B <br> Reg\_A <- 4 <br> MUL\_B <br> <br> (3 + 2) x 4 = ?      |
+| 1. Addition von einzelnen Werten  <br> 2. Arithmetische Einheit mit mehren Funktionen  <br> 3. Sequenzen von Berechnungsfolgen <br> <br>  <br>  <br>  <br> <br>  <br><br> |  Und die Daten? Wie können wir hier die <br> notwendige Variabilität sicherstellen? <br> <br> Reg\_A <- 3 <br> Reg\_B <- 2 <br> ADD\_B <br> Reg\_A <- 4 <br> MUL\_B <br> <br> (3 + 2) x 4 = ?      |
 
 ********************************************************************************
 
+                                    {{1-3}}
+********************************************************************************
 Das flexible Laden von Daten aus dem Speicher setzt voraus, dass ALU Konfigurationen und Daten gemischt werden! Zugleich wächst die Zahl der Steuerleitungen immer weiter an.
 
 **Wir brauchen eine neue Abstraktionsebene und eine Interpretationskomponente!**
 
-![ExtendedArchitecture](./img/ExtendedArchitecture.png "ExtendedArchitecture") <!-- width="60%" -->
+![ExtendedArchitecture](./img/ExtendedArchitecture.png "ExtendedArchitecture") <!-- width="50%" -->
+
+********************************************************************************
+
+                                    {{2}}
+********************************************************************************
+
+Aus dem spezifischen Mustern von Konfigurationsflags werden damit abstrakte, generische Befehle.
+
+```
+LDA 	Adresse	  //Load A from Memory Address
+STA 	Adresse	  //Store A to Memory Address
+
+ADD	     		    // ADD Operation
+XOR			        // Exor Operand
+AND	  	      	// AND Operand
+OR		       	  // OR Operand
+…
+```
+********************************************************************************
+
+## 5. - Zielstellung 4 ... Daten und abstrakte Befehle
+
+                                       {{0-2}}
+********************************************************************************
+
+| Realisierte Features                                  | Wunschliste |
+| ----------------------------------------------------- | ----------- |
+| 1. Addition von einzelnen Werten  <br> 2. Arithmetische Einheit mit mehren Funktionen  <br> 3. Sequenzen von Berechnungsfolgen <br> 4. Programmen als Sequenz abstrakter Befehle <br> 5. Flexibler Zugriff auf Daten und Befehle | Ein- und Ausgabe von Daten (Nutzerinteraktion) wäre schön  <br> <br> <br> <br> <br>|
+
+********************************************************************************
+
+                                      {{1-2}}
+********************************************************************************
+Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
+
+![WholeArchitecture](./img/WholeArchitecture.png) <!-- width="70%" -->
+
+********************************************************************************
 
 
+## 6. Fragen an die heutige Veranstaltung
 
+**Welche Art von Architektur liegt am Ende unserers Entwicklungsprozesses vor?**
 
-
-
-
-
-## Anhang
-
-Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
-
-![ScreenShotAtom](./img/ScreenShotAtom.png)
-
-Erläuterungen
-
-### Fragen an die heutige Veranstaltung
-
-**Welche Funktion haben die sogenannten Steuerleitungen beim Betrieb der CPU?**
-
-[( )] Triggern der Abarbeitung der Befehle
-[(X)] Spezifikation der Zustände bestimmter Komponenten
-[( )] Definition der Adressen des Programmspeichers
-[[?]] Mit den Steuerbits wurden unter anderem die spezifischen ALU Operationen adressiert.
+[( )] von Neumann
+[(X)] Harvard
+[[?]] Ich verwechsle es auch immer :-)
 
 **Der Befehlssatz einer (Modell)-CPU umfasst 27 Befehle. Wie viele Bit muss die korrespondierende OP-Code Repräsentation mindestens umfassen?**
 
@@ -601,6 +659,14 @@ Erläuterungen
 [[?]] Mit welcher Potenz von zwei werden 27 Zustände abgedeckt?
 
 **...**
+
+
+## Anhang
+
+Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
+
+![ScreenShotAtom](./img/ScreenShotAtom.png)<!-- width="70%" -->
+
 
 ### Referenzen und Literaturhinweise
 
