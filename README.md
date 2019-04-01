@@ -6,6 +6,8 @@ version:  0.0.1
 language: de
 narrator: Deutsch Female
 
+link: https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css
+
 import: https://raw.githubusercontent.com/liaScript/rextester_template/master/README.md
 import: https://raw.githubusercontent.com/liaScript/logicemu_template/master/README.md
 
@@ -45,6 +47,7 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
 
 **Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Gatterlogik!**
 
+<!-- class="animated fadeIn" -->
                                     {{0-1}}
 ********************************************************************************
 
@@ -63,7 +66,7 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                     {{0-2}}
 ********************************************************************************
 
@@ -73,7 +76,7 @@ Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                       {{1}}
 ********************************************************************************
 
@@ -99,6 +102,7 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 
 ## 2 - Zielstellung 1 ... Variable Operationen
 
+<!-- class="animated fadeIn" -->
                                     {{0-1}}
 ********************************************************************************
 
@@ -108,7 +112,7 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                       {{1}}
 ********************************************************************************
 ![ALU](img/ALU.png)<!-- width="50%" -->
@@ -147,7 +151,7 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                     {{2}}
 ********************************************************************************
 
@@ -165,6 +169,7 @@ Konfigurationen der Steuerleitungen?
 
 ## 3 - Zielstellung 2 ... Folgen von Operationen
 
+<!-- class="animated fadeIn" -->
                                     {{0-1}}
 ********************************************************************************
 
@@ -174,7 +179,7 @@ Konfigurationen der Steuerleitungen?
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                     {{1-3}}
 ********************************************************************************
 
@@ -185,7 +190,7 @@ Konfigurationen der Steuerleitungen?
 
 ********************************************************************************
 
-
+<!-- class="animated fadeIn" -->
                                     {{2}}
 ********************************************************************************
 
@@ -197,6 +202,7 @@ Und wie greifen wir auf die Daten zu?
 
 ## 4. - Zielstellung 3 ... Daten und abstrakte Befehle
 
+<!-- class="animated fadeIn" -->
                                     {{0-1}}
 ********************************************************************************
 
@@ -206,6 +212,7 @@ Und wie greifen wir auf die Daten zu?
 
 ********************************************************************************
 
+<!-- class="animated fadeIn" -->
                                     {{1-3}}
 ********************************************************************************
 Das flexible Laden von Daten aus dem Speicher setzt voraus, dass ALU Konfigurationen und Daten gemischt werden! Zugleich wächst die Zahl der Steuerleitungen immer weiter an.
@@ -216,6 +223,7 @@ Das flexible Laden von Daten aus dem Speicher setzt voraus, dass ALU Konfigurati
 
 ********************************************************************************
 
+<!-- class="animated fadeIn" -->
                                     {{2}}
 ********************************************************************************
 
@@ -235,6 +243,7 @@ OR		       	  // OR Operand
 
 ## 5. - Zielstellung 4 ... Daten und abstrakte Befehle
 
+<!-- class="animated fadeIn" -->
                                        {{0-2}}
 ********************************************************************************
 
@@ -244,6 +253,7 @@ OR		       	  // OR Operand
 
 ********************************************************************************
 
+<!-- class="animated fadeIn" -->
                                       {{1-2}}
 ********************************************************************************
 Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
