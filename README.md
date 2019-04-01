@@ -48,16 +48,16 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
                                     {{0-1}}
 ********************************************************************************
 
-| $a$ | $b$ | $c_{in}$ | $c_{out}$ | $s$ |
-| --- | --- | -------- | --------- | --- |
-| 0   | 0   | 0        | 0         | 0   |
-| 0   | 0   | 1        | 1         | 0   |
-| 0   | 1   | 0        | 1         | 0   |
-| 0   | 1   | 1        | 0         | 1   |
-| 1   | 0   | 0        | 1         | 0   |
-| 1   | 0   | 1        | 0         | 1   |
-| 1   | 1   | 0        | 0         | 1   |
-| 1   | 1   | 1        | 1         | 1   |
+| $a$ | $b$ | $c_{in}$ | $s$ | $c_{out}$ |
+| --- | --- | -------- | --- | --------- |
+| 0   | 0   | 0        | 0   | 0         |
+| 0   | 0   | 1        | 1   | 0         |
+| 0   | 1   | 0        | 1   | 0         |
+| 0   | 1   | 1        | 0   | 1         |
+| 1   | 0   | 0        | 1   | 0         |
+| 1   | 0   | 1        | 0   | 1         |
+| 1   | 1   | 0        | 0   | 1         |
+| 1   | 1   | 1        | 1   | 1         |
 
 ---------------------------------------------------------------------
 
@@ -69,7 +69,7 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
 
 Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit Fortschreibung des Carrys.
 
-![Addierer](img/Addierer.png)<!-- width="60%" --> [WikiAdd]
+![Addierer](img/Addierer.png)<!-- width="40%" --> [WikiAdd]
 
 ********************************************************************************
 
@@ -110,7 +110,7 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 
                                       {{1}}
 ********************************************************************************
-![ALU](img/ALU.png)<!-- width="80%" -->
+![ALU](img/ALU.png)<!-- width="50%" -->
 
 <table border="1" rules="all">
   <col width="50">
@@ -180,7 +180,7 @@ Konfigurationen der Steuerleitungen?
 * Integration eines Speichers für die Konfigurationssequenzen
 * „Counter“ für die Konfiguration des Fortschritts im Ablauf – Inkrementierung einer Adresse
 
-![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="60%" -->
+![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="40%" -->
 
 ********************************************************************************
 
@@ -190,7 +190,7 @@ Konfigurationen der Steuerleitungen?
 
 Und wie greifen wir auf die Daten zu?
 
-![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="60%" -->
+![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="40%" -->
 
 ********************************************************************************
 
@@ -247,7 +247,7 @@ OR		       	  // OR Operand
 ********************************************************************************
 Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
 
-![WholeArchitecture](./img/WholeArchitecture.png) <!-- width="70%" -->
+![WholeArchitecture](./img/WholeArchitecture.png) <!-- width="40%" -->
 
 ********************************************************************************
 
