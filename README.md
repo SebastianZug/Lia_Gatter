@@ -69,7 +69,7 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
 
 Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit Fortschreibung des Carrys.
 
-![Addierer](img/Addierer.png)<!-- width="40%" --> [WikiAdd]
+![Addierer](img/Addierer.png)<!-- width="40%" --> [WikiAdd](#9)
 
 ********************************************************************************
 
@@ -77,7 +77,8 @@ Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit
                                       {{1}}
 ********************************************************************************
 
-```
+
+``` text @LogicEmu.run
          "8"   "4"   "2"   "1"
  "S"      l     l     l     l
           ^     ^     ^     ^
@@ -90,7 +91,7 @@ Volladdierer, zusammengesetzt aus zwei Halbaddierern, sowie 4 Bit Addierwerk mit
         *     *     *     *
  "B"    s     s     s     s
 ```
-@LogicEmu.eval
+
 
 Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 
@@ -256,14 +257,14 @@ Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
 
 **Welche Art von Architektur liegt am Ende unserers Entwicklungsprozesses vor?**
 
-[( )] von Neumann
-[(X)] Harvard
-[[?]] Ich verwechsle es auch immer :-)
+    [( )] von Neumann
+    [(X)] Harvard
+    [[?]] Ich verwechsle es auch immer :-)
 
 **Der Befehlssatz einer (Modell)-CPU umfasst 27 Befehle. Wie viele Bit muss die korrespondierende OP-Code Repräsentation mindestens umfassen?**
 
-[[5]]
-[[?]] Mit welcher Potenz von zwei werden 27 Zustände abgedeckt?
+    [[5]]
+    [[?]] Mit welcher Potenz von zwei werden 27 Zustände abgedeckt?
 
 **...**
 
