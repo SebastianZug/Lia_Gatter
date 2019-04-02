@@ -195,7 +195,7 @@ Konfigurationen der Steuerleitungen?
 * Integration eines Speichers für die Konfigurationssequenzen
 * „Counter“ für die Konfiguration des Fortschritts im Ablauf – Inkrementierung einer Adresse
 
-![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="80%" -->
+![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="70%" -->
 
 ********************************************************************************
 
@@ -205,7 +205,7 @@ Konfigurationen der Steuerleitungen?
 
 Und wie greifen wir auf die Daten zu?
 
-![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="80%" -->
+![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="70%" -->
 
 ********************************************************************************
 
