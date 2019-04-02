@@ -291,6 +291,8 @@ Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
 
 Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
 
+https://github.com/SebastianZug/Lia_Gatter
+
 Beteiligen Sie sich an der Weiterentwicklung der Materialien!
 
 ![ScreenShotAtom](./img/ScreenShotAtom.png)<!-- width="70%" -->
@@ -303,4 +305,6 @@ Beteiligen Sie sich an der Weiterentwicklung der Materialien!
 
 ### Autoren
 
-Sebastian Zug
+Sebastian Zug, ... und vielleicht morgen Sie?
+
+**Vielen Dank für die Aufmerksamkeit**
