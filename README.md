@@ -115,7 +115,7 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
 <!-- class="animated fadeIn" -->
                                       {{1}}
 ********************************************************************************
-![ALU](img/ALU.png)<!-- width="50%" -->
+![ALU](img/ALU.png)<!-- width="70%" -->
 
 <table border="1" rules="all">
   <col width="50">
@@ -195,7 +195,7 @@ Konfigurationen der Steuerleitungen?
 * Integration eines Speichers für die Konfigurationssequenzen
 * „Counter“ für die Konfiguration des Fortschritts im Ablauf – Inkrementierung einer Adresse
 
-![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="40%" -->
+![ExtendedALU](./img/ExtendedALU.png "ExtendedALU") <!-- width="80%" -->
 
 ********************************************************************************
 
@@ -205,7 +205,7 @@ Konfigurationen der Steuerleitungen?
 
 Und wie greifen wir auf die Daten zu?
 
-![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="40%" -->
+![Busszugriff](./img/BusAccess.png "ExtendedALU") <!-- width="80%" -->
 
 ********************************************************************************
 
@@ -266,7 +266,7 @@ Aus dem spezifischen Mustern von Konfigurationsflags werden damit abstrakte, gen
 ********************************************************************************
 Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
 
-![WholeArchitecture](./img/WholeArchitecture.png) <!-- width="40%" -->
+![WholeArchitecture](./img/WholeArchitecture.png) <!-- width="55%" -->
 
 ********************************************************************************
 
