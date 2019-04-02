@@ -21,7 +21,7 @@ Prof. Dr. Sebastian Zug
 
 ```armasm
 section .data
-  hello:     db 'Herzlich willkommen',10
+  hello:     db 'Probevorlesung TI',10
   helloLen:  equ $-hello          
 
 section .text
@@ -43,7 +43,7 @@ Die interacktive Version des Vortrages findet sich unter [LiaScript](https://lia
 
 ---------------------------------------------------------------------
 
-## 1 - Prüfungsfrage(n)
+## 1 - Prüfungsfrage(n) zur letzten Veranstaltung
 
 **Beschreiben Sie die Wertetabelle eines Volladierers und skizzieren Sie desses Gatterlogik!**
 
@@ -305,6 +305,8 @@ Beteiligen Sie sich an der Weiterentwicklung der Materialien!
 
 ### Autoren
 
-Sebastian Zug, ... und vielleicht morgen Sie?
+Sebastian Zug,
+
+... und vielleicht morgen Sie?
 
 **Vielen Dank für die Aufmerksamkeit**
