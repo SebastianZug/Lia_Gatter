@@ -21,8 +21,8 @@ Prof. Dr. Sebastian Zug
 
 ```armasm
 section .data
-    hello:     db 'Hello World?',10
-    helloLen:  equ $-hello          
+  hello:     db 'Herzlich willkommen',10
+  helloLen:  equ $-hello          
 
 section .text
 	global _start
@@ -137,13 +137,22 @@ Dokumentation und Beispiele unter [Link](https://lodev.org/logicemu/)
     <tr>
       <td>0 </td> <td>0 </td> <td>0 </td> <td> 1</td> <td> OR_B </td>
       </tr>
-      <tr>  
-      <td>0 </td> <td>0 </td> <td>1 </td> <td> 0</td> <td> AND_A </td>
-      </tr>
       <tr>
-      <td>0 </td> <td>0 </td> <td>1 </td> <td> 1</td> <td> AND_B </td>  
-		</tr>
+        <td> ... </td> <td>  </td> <td> </td> <td>  </td> <td>   </td>  
+      </tr>
     <tr>
+    <td>0 </td> <td>1 </td> <td>0 </td> <td> 0</td> <td> EOR_A </td>
+    </tr>
+    <tr>
+     <td>0 </td> <td>1 </td> <td>0 </td> <td> 1</td> <td> EOR_B </td>
+    </tr>
+        <tr>  
+    <td>0 </td> <td>1 </td> <td>1 </td> <td> 0</td> <td> ADD_A </td>
+    </tr>
+    <tr>
+    <td>0 </td> <td>1 </td> <td>1 </td> <td> 1</td> <td> ADD_B </td>  
+  </tr>
+  <tr>
     <td> ... </td> <td>  </td> <td> </td> <td>  </td> <td>   </td>  
   </tr>
 	</tbody>
@@ -160,7 +169,7 @@ Konfigurationen der Steuerleitungen?
 
 ``` Counter
 // Reg_A = 1; Reg_B = 0;
-// Fall 1                         Fall 2
+// Fall 1                         // Fall 2
    0 1 1 1                        0 1 0 1
    ...                            ...
 ```
@@ -230,13 +239,12 @@ Das flexible Laden von Daten aus dem Speicher setzt voraus, dass ALU Konfigurati
 Aus dem spezifischen Mustern von Konfigurationsflags werden damit abstrakte, generische Befehle.
 
 ```
-LDA 	Adresse	  //Load A from Memory Address
-STA 	Adresse	  //Store A to Memory Address
-
-ADD	     		    // ADD Operation
-XOR			        // Exor Operand
-AND	  	      	// AND Operand
-OR		       	  // OR Operand
+000   LDA 	Adresse	  //Load A from Memory Address
+001   STA 	Adresse	  //Store A to Memory Address
+010   ADD	  Rn        // ADD Operation
+011   EOR		Rn        // Exor Operand
+100   AND	  Rn      	// AND Operand
+101   OR		Rn     	  // OR Operand
 …
 ```
 ********************************************************************************
@@ -282,6 +290,8 @@ Das Steuerwerk koordiniert neben der ALU die Ein- und Ausgabeschnittstelle
 ## Anhang
 
 Link auf die aktuelle Vorlesung im Versionsmanagementsystem GitHub
+
+Beteiligen Sie sich an der Weiterentwicklung der Materialien!
 
 ![ScreenShotAtom](./img/ScreenShotAtom.png)<!-- width="70%" -->
 
